@@ -35,7 +35,7 @@ for page in pages:
     for pattern in [r'<link rel="canonical"[^>]*>', r'<meta property="og:url"[^>]*>']:
         source = re.sub(pattern, '', source)
     source = re.sub(r'<meta property="og:image" content="[^"]*">',
-                    '<meta property="og:image" content="' + html.escape(urljoin(base, 'assets/social-preview.png'), quote=True) + '">', source)
+                    '<meta property="og:image" content="' + html.escape(urljoin(base, 'assets/social-preview.png?v=sage-forest-20261016'), quote=True) + '">', source)
     source = source.replace('</head>', '<link rel="canonical" href="' + html.escape(canonical, quote=True) + '"><meta property="og:url" content="' + html.escape(canonical, quote=True) + '"></head>')
     page.write_text(source)
 config_path.write_text('/* Optional launch configuration. */\nwindow.POINTS_POINTS = Object.freeze({\n' +

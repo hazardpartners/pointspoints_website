@@ -112,7 +112,7 @@ opening `index.html` in your browser. For a local HTTP preview, run
 
 ## Assets and editing
 
-The original app logo and icon are used, with resized copies for the web.
+The sage-and-forest app icon is used throughout the website, with resized copies for the header/footer, notification illustrations, browser favicon and saved-site icon. The social preview uses the matching forest pin. Versioned asset URLs refresh cached icons after upload.
 Five real app screenshots from the verified green-theme build are optimized as WebP images.
 Search, Wallet, and Explore show sage Light mode; the Features page also compares
 the same Overview screen in sage Light and forest Dark modes. Screens show example

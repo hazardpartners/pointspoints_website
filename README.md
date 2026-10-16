@@ -22,18 +22,36 @@ it when uploading if possible. The pages are plain HTML and need no Jekyll featu
 Official instructions:
 https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
-## Add your own domain
+## Connect pointspoints.app
 
-Verify domain ownership in your GitHub account's **Settings → Pages** first.
-Then add the custom domain in the repository's **Settings → Pages** before
-pointing DNS at GitHub. Configure both the root domain and `www`, then enable
-**Enforce HTTPS** after GitHub's certificate is available.
+This package is configured for https://pointspoints.app/:
+- `CNAME` contains `pointspoints.app`.
+- Canonical URLs, social-preview URLs, sitemap.xml and robots.txt use that domain.
+- The general contact address remains hello@pointspoints.app.
 
-Use GitHub's current DNS instructions:
-https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+1. In your GitHub account Settings → Pages, add and verify `pointspoints.app` using the TXT record GitHub provides. Keep that TXT record after verification.
+2. Upload this folder’s contents to a dedicated website repository. Keep index.html, CNAME, .nojekyll and assets at its top level.
+3. In the repository’s Settings → Pages, select Deploy from a branch, main, /(root), then Save.
+4. Set Custom domain to `pointspoints.app` and save before pointing DNS to GitHub.
+5. At the company managing the domain’s DNS, add these records. Replace YOUR-USERNAME with the GitHub user or organization hosting the repository; omit the repository name.
 
-No domain or `CNAME` has been invented for this package. Add your actual domain
-through GitHub's Pages settings when you are ready.
+| Type | Name | Value |
+| --- | --- | --- |
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | YOUR-USERNAME.github.io |
+
+Optional IPv6: add four AAAA records at @, with values `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, and `2606:50c0:8003::153`.
+
+Replace conflicting default website/parking records for @ or www. Preserve email MX and email-verification TXT records. DNS setup for the website does not create the hello@pointspoints.app mailbox.
+
+6. Wait for GitHub’s DNS check and certificate, then enable Enforce HTTPS. DNS propagation and HTTPS availability can each take up to 24 hours. With both domain variants configured, www.pointspoints.app redirects to pointspoints.app.
+
+Official instructions:
+- https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+- https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages
 
 ## Add the App Store link
 
@@ -45,33 +63,15 @@ Open `assets/site-config.js` and paste your public App Store URL into
 Commit the change to GitHub. All buttons marked as app download links will use it,
 and the download page will show its App Store button.
 
-## Optional: configure social previews and the final URL
+## Refresh domain metadata or add the App Store URL
 
-`assets/social-preview.png` is included. The initial HTML uses a relative image
-address because your final domain is not yet known. Some social platforms need
-an absolute address. Once you know your site's URL, this optional helper adds
-absolute social-image URLs, canonical page URLs, a sitemap, and robots.txt:
+The domain metadata is already configured. To regenerate it later, run:
 
 ```sh
-python3 configure-site.py --site-url https://YOUR-DOMAIN.example
+python3 configure-site.py --site-url https://pointspoints.app
 ```
 
-For a GitHub project URL, include the repository path:
-
-```sh
-python3 configure-site.py --site-url https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/
-```
-
-You can also set launch links in the same command:
-
-```sh
-python3 configure-site.py --site-url https://YOUR-DOMAIN.example --app-store-url "YOUR-PUBLIC-APP-STORE-URL"
-```
-
-Replace the example values with your actual values. Run the command from this
-folder, then upload the updated files. The helper uses only built-in Python
-libraries and makes no network requests. It is optional; the website itself
-runs without Python. You can omit `configure-site.py` from the published repo.
+You can also supply `--app-store-url` with your verified public App Store listing. The helper uses only built-in Python libraries and makes no network requests. The website itself needs no Python or build step.
 
 ## Pages included
 
@@ -143,8 +143,12 @@ The homepage hero links to a prominent goals section before arrival alerts. Goal
 
 The homepage, About, FAQ, Privacy, Terms, download page and shared footers explicitly state that identity/contact details and personal wallet/rewards data are not collected. No-sale and referral-independence commitments remain. Existing pseudonymous app analytics and hosting/third-party connection disclosures are preserved; this website-copy change does not disable those services or claim zero data transmission of every kind.
 
-Company attribution: “Points Points! is a product of Hazard Partners LLC.” appears in the shared footer and the About page. No unprovided company address, registration, or contact information was added.
+Company attribution: “Points Points! is a product of Hazard Partners LLC.” appears in the shared footer and the About page. No unprovided company address or registration information was added.
 
 ## Card terminology
 
 Each page introduces the product category as “credit card” or “credit cards” at its first card reference, then uses “card” or “cards” for later references. The 404 page has no card references. Keep this convention when editing page copy.
+
+## General contact
+
+The general contact address is hello@pointspoints.app. Clickable email links appear in every standard page footer, the FAQ contact section, and the 404 page.

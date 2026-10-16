@@ -1,4 +1,4 @@
-/* Optional launch link. Leave appStoreUrl empty until the listing is public. */
+/* Optional launch configuration. */
 window.POINTS_POINTS = Object.freeze({
   appStoreUrl: ""
 });

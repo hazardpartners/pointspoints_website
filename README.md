@@ -76,7 +76,7 @@ You can also supply `--app-store-url` with your verified public App Store listin
 ## Pages included
 
 - `index.html` — Home, arrival-alert feature, app screenshots, privacy and referral explanation.
-- `how-it-works.html` — Four-step walkthrough with app screens and optional arrival-alert setup.
+- `how-it-works.html` — Capabilities overview with app screens and optional arrival suggestions.
 - `features.html` — Comparisons, points, benefits, and recommendation explanations.
 - `support.html` — Frequently asked questions and self-service help.
 - `about.html` — Purpose, free access, and privacy-first approach.
@@ -152,3 +152,7 @@ Each page introduces the product category as “credit card” or “credit card
 ## General contact
 
 The general contact address is hello@pointspoints.app. Clickable email links appear in every standard page footer, the FAQ contact section, and the 404 page.
+
+## Concise product copy — October 16, 2026
+
+Marketing pages focus on capabilities and outcomes rather than setup steps or in-app navigation. Goals, card comparisons, perks, travel/entertainment, arrival suggestions and themes remain. Required permission conditions, estimate limitations, privacy disclosures and analytics controls remain available.

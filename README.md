@@ -75,7 +75,7 @@ runs without Python. You can omit `configure-site.py` from the published repo.
 
 ## Pages included
 
-- `index.html` — Home, arrival-alert feature, actual app preview, interactive rewards illustration.
+- `index.html` — Home, arrival-alert feature, app screenshots, privacy and referral explanation.
 - `how-it-works.html` — Four-step walkthrough with app screens and optional arrival-alert setup.
 - `features.html` — Comparisons, points, benefits, and recommendation explanations.
 - `support.html` — Frequently asked questions and self-service help.
@@ -94,7 +94,7 @@ opening `index.html` in your browser. For a local HTTP preview, run
 ## Privacy and publication notes
 
 - The website has no PostHog, cookies, analytics, third-party fonts, remote
-  scripts, or sign-up forms. The demo uses no persistent storage or requests.
+  scripts, or sign-up forms.
 - The app is different: you confirmed retaining its limited PostHog integration.
   The privacy page describes the documented foreground and external-link events,
   random installation/session identifiers, and limited app/device metadata. It
@@ -116,7 +116,7 @@ The original app logo and icon are used, with resized copies for the web.
 Five real app screenshots from the verified green-theme build are optimized as WebP images.
 Search, Wallet, and Explore show sage Light mode; the Features page also compares
 the same Overview screen in sage Light and forest Dark modes. Screens show example
-setup states; the demo uses explicitly illustrative card names and earning rates.
+setup states.
 
 Main styling: `assets/styles.css`.
 Local interactions: `assets/site.js`.
@@ -128,3 +128,9 @@ appears. No runtime framework is used. There is no pricing page.
 Arrival-alert previews are explicitly labeled HTML/CSS illustrations, not app screenshots. Background notifications require user permission, automatic recommendations, supported context and iOS delivery. The website itself never requests location or notification access.
 
 Home and Features include a code-rendered iPhone Lock Screen illustration; the setup walkthrough pairs the same view with arrival permissions. The widget is circular, matching the app’s supported Lock Screen family, with its PLAT label based on the app’s compact-label format for Platinum Card. The figure is explicitly illustrative, not an actual device screenshot.
+
+## Privacy and referral copy — October 15, 2026
+
+Home, About, FAQ, Privacy and Terms now disclose the planned affiliate-network and partnership referral model, no sale of user data, and ranking independence. Every page footer repeats the no-sale/independence promise. Personal-details language names identity/contact/payment details and preserves the existing pseudonymous app analytics, hosting, and optional-service disclosures. No partner or network is invented, no affiliate URL is added, and planned income is described as planned.
+
+The interactive rewards preview and its entry link, calculator code/styles, and obsolete demo FAQ/privacy/terms references were removed at the owner’s request.

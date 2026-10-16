@@ -156,3 +156,11 @@ The general contact address is hello@pointspoints.app. Clickable email links app
 ## Concise product copy — October 16, 2026
 
 Marketing pages focus on capabilities and outcomes rather than setup steps or in-app navigation. Goals, card comparisons, perks, travel/entertainment, arrival suggestions and themes remain. Required permission conditions, estimate limitations, privacy disclosures and analytics controls remain available.
+
+
+## Current app screenshots
+
+Refreshed October 16, 2026 from the running iOS app: Overview in Sage and Forest,
+Wallet, Search, Explore, and an example personal goal. Wallet cards and goal
+progress are demonstration data. Screens are resized and exported as lossless
+WebP; the interface content is not redrawn.

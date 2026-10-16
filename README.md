@@ -138,3 +138,7 @@ The interactive rewards preview and its entry link, calculator code/styles, and 
 ## Goals emphasis
 
 The homepage hero links to a prominent goals section before arrival alerts. Goal-setting is step two of getting started and the walkthrough. Goals and personalization lead the Features page using the existing Wallet screenshot. FAQ explains the actual Wallet → Goals & Benefits path, active-goal versus pinned-goal distinction, and manual progress. Supported goals can shape relevant recommendations; no guaranteed outcome or automated account tracking is implied.
+
+## No-collection emphasis
+
+The homepage, About, FAQ, Privacy, Terms, download page and shared footers explicitly state that identity/contact details and personal wallet/rewards data are not collected. No-sale and referral-independence commitments remain. Existing pseudonymous app analytics and hosting/third-party connection disclosures are preserved; this website-copy change does not disable those services or claim zero data transmission of every kind.

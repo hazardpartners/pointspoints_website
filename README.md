@@ -142,3 +142,5 @@ The homepage hero links to a prominent goals section before arrival alerts. Goal
 ## No-collection emphasis
 
 The homepage, About, FAQ, Privacy, Terms, download page and shared footers explicitly state that identity/contact details and personal wallet/rewards data are not collected. No-sale and referral-independence commitments remain. Existing pseudonymous app analytics and hosting/third-party connection disclosures are preserved; this website-copy change does not disable those services or claim zero data transmission of every kind.
+
+Company attribution: “Points Points! is a product of Hazard Partners LLC.” appears in the shared footer and the About page. No unprovided company address, registration, or contact information was added.

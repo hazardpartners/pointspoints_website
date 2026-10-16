@@ -134,3 +134,7 @@ Home and Features include a code-rendered iPhone Lock Screen illustration; the s
 Home, About, FAQ, Privacy and Terms now disclose the planned affiliate-network and partnership referral model, no sale of user data, and ranking independence. Every page footer repeats the no-sale/independence promise. Personal-details language names identity/contact/payment details and preserves the existing pseudonymous app analytics, hosting, and optional-service disclosures. No partner or network is invented, no affiliate URL is added, and planned income is described as planned.
 
 The interactive rewards preview and its entry link, calculator code/styles, and obsolete demo FAQ/privacy/terms references were removed at the owner’s request.
+
+## Goals emphasis
+
+The homepage hero links to a prominent goals section before arrival alerts. Goal-setting is step two of getting started and the walkthrough. Goals and personalization lead the Features page using the existing Wallet screenshot. FAQ explains the actual Wallet → Goals & Benefits path, active-goal versus pinned-goal distinction, and manual progress. Supported goals can shape relevant recommendations; no guaranteed outcome or automated account tracking is implied.

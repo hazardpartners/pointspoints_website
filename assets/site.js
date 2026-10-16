@@ -31,7 +31,7 @@ try {
 if (appUrl) {
   document.querySelectorAll("[data-app-link]").forEach(link => {
     link.href = appUrl;
-    link.setAttribute("aria-label", "Download Points Points on the App Store");
+    link.setAttribute("aria-label", "Download Points Points! on the App Store");
   });
   document.querySelectorAll("[data-download]").forEach(element => { element.hidden = false; });
   document.querySelectorAll("[data-prelaunch]").forEach(element => { element.hidden = true; });

@@ -1,4 +1,4 @@
-# Points Points website
+# Points Points! website
 
 A complete static website for GitHub Pages. No build step, package installation,
 database, account system, analytics, or external fonts are needed.
